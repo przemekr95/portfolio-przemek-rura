@@ -1,0 +1,101 @@
+label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-image: radial-gradient(#3678e0, #94bbe9);
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  border-radius: 50%;
+  height: 7rem;
+  width: 7rem;
+  cursor: pointer;
+  z-index: 1000;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.nav-background {
+  position: fixed;
+  top: 1.5rem;
+  right: 1.5rem;
+  background-image: radial-gradient(#3678e0, #94bbe9);
+  height: 6rem;
+  width: 6rem;
+  border-radius: 50%;
+  -webkit-transition: -webkit-transform .5s;
+  transition: -webkit-transform .5s;
+  transition: transform .5s;
+  transition: transform .5s, -webkit-transform .5s;
+  z-index: 600;
+}
+
+i {
+  color: #ffffff;
+  font-size: 2rem;
+}
+
+.toggle-menu {
+  background-image: radial-gradient(#3678e0, #94bbe9);
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
+  -webkit-transform: scale(80);
+          transform: scale(80);
+  cursor: default;
+  z-index: 2000;
+}
+
+nav {
+  display: none;
+  color: gold;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2500;
+}
+
+.toggle-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+ul {
+  position: absolute;
+  list-style: none;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-align: center;
+  width: 100%;
+}
+
+.nav-item {
+  display: inline-block;
+  font-size: 3rem;
+  font-weight: 300;
+  text-decoration: none;
+  color: #94bbe9;
+  padding: 1rem 2rem;
+  background-image: linear-gradient(120deg, transparent 0%, transparent 50%, #ffffff 50%);
+  background-size: 240%;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.nav-item:hover, .nav-item:active {
+  background-position: 100%;
+  color: #3678e0;
+  -webkit-transform: translate(1rem);
+          transform: translate(1rem);
+}
+/*# sourceMappingURL=HamburgerMenu.css.map */

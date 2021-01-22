@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,cAAc,CAAC;EACX,OAAO,EAAE,IAAI;EACb,cAAc,EAAE,MAAM;EACtB,eAAe,EAAE,MAAM;EACvB,WAAW,EAAE,MAAM;EACnB,MAAM,EAAE,KAAK;EAEb,UAAU,EAAE,OAAe;EAC3B,UAAU,EAAE,qDAAyE;EACrF,UAAU,EAAE,wDAA4E;EACxF,UAAU,EAAE,gDAAoE;EAChF,MAAM,EAAE,wGAAwG;CAAG",
+    "sources": [
+        "../components/pages/About/About.sass"
+    ],
+    "names": [],
+    "file": "About.css"
+}
