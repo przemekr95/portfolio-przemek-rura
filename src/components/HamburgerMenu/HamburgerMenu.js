@@ -26,7 +26,7 @@ render(){
                 <input type="checkbox" checked={this.state.checkbox} onChange={()=>this.toggleMenu()} className="toggler"/>
                 <div className="hamburger"><div></div></div>
                 <div className="menu">
-                    <div onChange={()=>this.toggleMenu()}>
+                    <div onClick={()=>this.toggleMenu()}>
                         <div>
                             <ul>
                                 <li>
