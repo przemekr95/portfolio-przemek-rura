@@ -24,7 +24,7 @@
   width: 60px;
   height: 60px;
   padding: 1rem;
-  background-color: rgba(24, 0, 204, 0.95);
+  background-color: #0c2461;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -126,7 +126,7 @@
 }
 
 .menu-wrapper .menu > div {
-  background-image: radial-gradient(rgba(24, 0, 204, 0.95), rgba(22, 130, 251, 0.95));
+  background-image: radial-gradient(#0c2461, rgba(22, 130, 251, 0.95));
   border-radius: 50%;
   width: 300vw;
   height: 300vw;
@@ -172,7 +172,7 @@
 
 .nav-item:hover, .nav-item:active {
   background-position: 100%;
-  color: rgba(24, 0, 204, 0.95);
+  color: #0c2461;
   -webkit-transform: translate(1rem);
   transform: translate(1rem);
 }

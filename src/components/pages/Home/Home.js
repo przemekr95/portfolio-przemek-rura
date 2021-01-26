@@ -8,7 +8,7 @@ const Home = ()=>{
         <>
         <div className="home-wrapper">
             <div className="shadow"></div>
-            <h1 className='animate__animated animate__bounce'>Przemek Rura</h1>
+            <h1>Przemek Rura</h1>
             <p>Frontend Developer</p>
             <Link to="/about">
                 <button>About me</button>
