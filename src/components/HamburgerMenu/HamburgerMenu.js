@@ -6,18 +6,15 @@ class HamburgerMenu extends React.Component{
     constructor(props){
         super(props)
         this.state = {
-            menuOpen: false,
-            navOpen: false,
+            checkbox: false
         }
 }
 
 
 toggleMenu (){
-    const currentStateMenu = this.state.menuOpen;
-    const currentStateNav = this.state.navOpen;    
+    const currentCheckbox = this.state.checkbox; 
     this.setState({
-        menuOpen: !currentStateMenu,
-        navOpen: !currentStateNav
+        checkbox: !currentCheckbox
     });
 }
 
@@ -25,28 +22,30 @@ render(){
 
     return (
         <>
-            <label onClick={()=>this.toggleMenu()} htmlFor="navi-toggle">
-                <i className="fas fa-hamburger"></i>
-            </label>
-
-            <div className={this.state.menuOpen ? 'toggle-menu nav-background' : 'nav-background'}></div>
-            
-            <nav className={this.state.menuOpen ? 'toggle-nav' : null} onClick={()=>this.toggleMenu()}>
-                <ul>
-                    <li>
-                        <NavLink className="nav-item" to='/'>Home</NavLink> 
-                    </li>
-                    <li>
-                        <NavLink className="nav-item" to='/about'>About</NavLink>
-                    </li>
-                    <li>
-                        <NavLink className="nav-item" to='/portfolio'>Portfolio</NavLink>
-                    </li>
-                    <li>
-                        <NavLink className="nav-item" to='/contact'>Contact</NavLink>
-                    </li>
-                </ul>
-            </nav>
+            <div className="menu-wrapper">
+                <input type="checkbox" checked={this.state.checkbox} onChange={()=>this.toggleMenu()} className="toggler"/>
+                <div className="hamburger"><div></div></div>
+                <div className="menu">
+                    <div onChange={()=>this.toggleMenu()}>
+                        <div>
+                            <ul>
+                                <li>
+                                    <NavLink className="nav-item" to='/'>Home</NavLink> 
+                                </li>
+                                <li>
+                                    <NavLink className="nav-item" to='/about'>About</NavLink>
+                                </li>
+                                <li>
+                                    <NavLink className="nav-item" to='/portfolio'>Portfolio</NavLink>
+                                </li>
+                                <li>
+                                    <NavLink className="nav-item" to='/contact'>Contact</NavLink>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </>     
     );
 };
