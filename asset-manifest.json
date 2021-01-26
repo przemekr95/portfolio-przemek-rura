@@ -1,21 +1,22 @@
 {
   "files": {
-    "main.css": "/portfolio-przemek-rura/static/css/main.e371c550.chunk.css",
-    "main.js": "/portfolio-przemek-rura/static/js/main.51846aac.chunk.js",
-    "main.js.map": "/portfolio-przemek-rura/static/js/main.51846aac.chunk.js.map",
+    "main.css": "/portfolio-przemek-rura/static/css/main.cf38e8b6.chunk.css",
+    "main.js": "/portfolio-przemek-rura/static/js/main.b39bfb30.chunk.js",
+    "main.js.map": "/portfolio-przemek-rura/static/js/main.b39bfb30.chunk.js.map",
     "runtime-main.js": "/portfolio-przemek-rura/static/js/runtime-main.54b1fec2.js",
     "runtime-main.js.map": "/portfolio-przemek-rura/static/js/runtime-main.54b1fec2.js.map",
     "static/js/2.bdb04244.chunk.js": "/portfolio-przemek-rura/static/js/2.bdb04244.chunk.js",
     "static/js/2.bdb04244.chunk.js.map": "/portfolio-przemek-rura/static/js/2.bdb04244.chunk.js.map",
     "index.html": "/portfolio-przemek-rura/index.html",
-    "static/css/main.e371c550.chunk.css.map": "/portfolio-przemek-rura/static/css/main.e371c550.chunk.css.map",
+    "static/css/main.cf38e8b6.chunk.css.map": "/portfolio-przemek-rura/static/css/main.cf38e8b6.chunk.css.map",
     "static/js/2.bdb04244.chunk.js.LICENSE.txt": "/portfolio-przemek-rura/static/js/2.bdb04244.chunk.js.LICENSE.txt",
+    "static/media/About.css": "/portfolio-przemek-rura/static/media/about-photo.5590a05c.jpg",
     "static/media/Home.css": "/portfolio-przemek-rura/static/media/home-background.ef5c7189.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.54b1fec2.js",
     "static/js/2.bdb04244.chunk.js",
-    "static/css/main.e371c550.chunk.css",
-    "static/js/main.51846aac.chunk.js"
+    "static/css/main.cf38e8b6.chunk.css",
+    "static/js/main.b39bfb30.chunk.js"
   ]
 }
