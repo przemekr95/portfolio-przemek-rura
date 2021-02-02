@@ -14,9 +14,12 @@ function App() {
         <Switch>
           <Route exact path="/"><Home/></Route>
           <Route path="/about"><About/></Route>
-          <Route path="/portfolio"><Portfolio/></Route>
-          <Route path="/contact"><Contact/></Route>
+          <Route path="/"><Portfolio/></Route>
+          <Route path="/"><Contact/></Route>
         </Switch>
+        <About/>
+        <Portfolio/>
+        <Contact/>
     </Router>
     
   </>
