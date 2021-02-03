@@ -1,13 +1,77 @@
-
 .portfolio-wrapper
     display: flex
     flex-direction: column
-    justify-content: center
     align-items: center
-    height: 100vh
+    background-color: #0c2461
+    padding-bottom: 60px
 
-    background: rgb(45,32,242)
-    background: -moz-linear-gradient(45deg, rgba(45,32,242,1) 0%, rgba(0,255,89,1) 100%)
-    background: -webkit-linear-gradient(45deg, rgba(45,32,242,1) 0%, rgba(0,255,89,1) 100%)
-    background: linear-gradient(45deg, rgba(45,32,242,1) 0%, rgba(0,255,89,1) 100%)
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#2d20f2",endColorstr="#00ff59",GradientType=1)
+.portfolio-wrapper > h2
+    font-size: 60px
+    margin: 80px
+    color: #f1f2f6
+
+.portfolio
+    max-width: 1024px
+    width: 100%
+    display: flex
+    justify-content: space-around
+    flex-wrap: wrap
+
+.portfolio-item
+    width: 300px
+    margin: 5px 10px 5px 10px
+    background-color: #f1f2f6
+    position: relative
+    box-shadow: 0 0 5px black
+
+.portfolio-item > img
+    background-size: cover
+    background-position: center
+    z-index: 0
+    height: 200px
+    width: 100%
+    transition: filter .3s
+
+.portfolio-item > img:hover
+    filter: brightness(20%)
+
+.portfolio-item > img:hover ~  h3
+    visibility: visible
+
+.portfolio-item > h3
+    visibility: hidden
+    position: absolute
+    margin-left: auto
+    margin-right: auto
+    left: 0
+    right: 0
+    text-align: center
+    top: 60px
+    font-size: 24px
+
+.portfolio-btns
+    display: flex
+    height: 90px
+    justify-content: space-around
+    align-items: center
+
+.portfolio-btns > a
+    height: 40px
+    width: 60px
+    display: flex
+    align-items: center
+    justify-content: center
+    cursor: pointer
+    border: solid 3px #0c2461
+    transition: border-radius .3s, height .3s
+    outline: 0
+    color: #0c2461
+    text-decoration: none
+    font-weight: bold
+
+.portfolio-btns > a:hover
+    border-radius: 50%
+    height: 60px
+
+.portfolio-btns > a:focus
+    box-shadow: 0 0 5px #0c2461
