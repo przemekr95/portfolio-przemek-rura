@@ -4,9 +4,6 @@ import myNotes from './../../../images/portfolio/portfolio-test.jpg'
 
 const projects = [
     {name: "ToDo", img: myNotes, live: "https://przemekr95.github.io/searchEngine/" ,code: "https://github.com/przemekr95"},
-    {name: "ToDo2", img: myNotes, live: "https://przemekr95.github.io/searchEngine/" ,code: "https://github.com/przemekr95"},
-    {name: "ToDo3", img: myNotes, live: "https://przemekr95.github.io/searchEngine/" ,code: "https://github.com/przemekr95"},
-    {name: "ToDo4", img: myNotes, live: "https://przemekr95.github.io/searchEngine/" ,code: "https://github.com/przemekr95"},
     {name: "ToDo5", img: myNotes, live: "https://przemekr95.github.io/searchEngine/" ,code: "https://github.com/przemekr95"},
     {name: "ToDo6", img: myNotes, live: "https://przemekr95.github.io/searchEngine/" ,code: "https://github.com/przemekr95"},
     {name: "ToDo7", img: myNotes, live: "https://przemekr95.github.io/searchEngine/" ,code: "https://github.com/przemekr95"},
