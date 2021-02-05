@@ -1,14 +1,19 @@
 import React from 'react';
 import '../../../css/Portfolio.css'
-import myNotes from './../../../images/portfolio/portfolio-test.jpg'
+import portfolio from './../../../images/portfolio/portfolio.jpg'
+import wallet from './../../../images/portfolio/wallet.jpg'
+import exchangeRateApp from './../../../images/portfolio/exchangeRateApp.jpg'
+import billSplitter from './../../../images/portfolio/billSplitter.jpg'
+import magic8Ball from './../../../images/portfolio/magic8Ball.jpg'
+import stopwatch from './../../../images/portfolio/stopwatch.jpg'
 
 const projects = [
-    {name: "ToDo", img: myNotes, live: "https://przemekr95.github.io/searchEngine/" ,code: "https://github.com/przemekr95"},
-    {name: "ToDo5", img: myNotes, live: "https://przemekr95.github.io/searchEngine/" ,code: "https://github.com/przemekr95"},
-    {name: "ToDo6", img: myNotes, live: "https://przemekr95.github.io/searchEngine/" ,code: "https://github.com/przemekr95"},
-    {name: "ToDo7", img: myNotes, live: "https://przemekr95.github.io/searchEngine/" ,code: "https://github.com/przemekr95"},
-    {name: "ToDo8", img: myNotes, live: "https://przemekr95.github.io/searchEngine/" ,code: "https://github.com/przemekr95"},
-    {name: "ToDo9", img: myNotes, live: "https://przemekr95.github.io/searchEngine/" ,code: "https://github.com/przemekr95"}
+    {name: "Portfolio website", img: portfolio, live: "https://przemekr95.github.io/portfolio-przemek-rura/" ,code: "https://github.com/przemekr95/portfolio-przemek-rura"},
+    {name: "Stopwatch", img: stopwatch, live: "https://przemekr95.github.io/stopwatch/" ,code: "https://github.com/przemekr95/stopwatch/"},
+    {name: "Exchange Rate App", img: exchangeRateApp, live: "https://przemekr95.github.io/exchangeRateApp/" ,code: "https://github.com/przemekr95/exchangeRateApp"},
+    {name: "Magic 8ball", img: magic8Ball, live: "https://przemekr95.github.io/magic8Ball/" ,code: "https://github.com/przemekr95/magic8Ball"},
+    {name: "Bill Splitter", img: billSplitter, live: "https://przemekr95.github.io/billSplitter/" ,code: "https://github.com/przemekr95/billSplitter"},
+    {name: "Wallet", img: wallet, live: "https://przemekr95.github.io/wallet/" ,code: "https://github.com/przemekr95/wallet"}
 ]
 
 const Portfolio = ()=>{

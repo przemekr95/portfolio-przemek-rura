@@ -33,36 +33,38 @@
 
 .portfolio-item {
   width: 300px;
-  margin: 5px 10px 5px 10px;
+  margin: 10px 10px 5px 10px;
   background-color: #f1f2f6;
   position: relative;
   -webkit-box-shadow: 0 0 5px black;
           box-shadow: 0 0 5px black;
+  -webkit-transition: -webkit-transform .3s;
+  transition: -webkit-transform .3s;
+  transition: transform .3s;
+  transition: transform .3s, -webkit-transform .3s;
+}
+
+.portfolio-item:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  z-index: 1;
 }
 
 .portfolio-item > img {
   background-size: cover;
   background-position: center;
-  z-index: 0;
-  height: 200px;
+  height: 250px;
   width: 100%;
   -webkit-transition: -webkit-filter .3s;
   transition: -webkit-filter .3s;
   transition: filter .3s;
   transition: filter .3s, -webkit-filter .3s;
-}
-
-.portfolio-item > img:hover {
-  -webkit-filter: brightness(20%);
-          filter: brightness(20%);
-}
-
-.portfolio-item > img:hover ~ h3 {
-  visibility: visible;
+  -webkit-filter: brightness(50%);
+          filter: brightness(50%);
 }
 
 .portfolio-item > h3 {
-  visibility: hidden;
+  visibility: visible;
   position: absolute;
   margin-left: auto;
   margin-right: auto;
@@ -71,6 +73,7 @@
   text-align: center;
   top: 60px;
   font-size: 24px;
+  text-shadow: 2px 2px 5px black;
 }
 
 .portfolio-btns {

@@ -154,37 +154,24 @@ class Contact extends React.Component {
                         <div className="control-buttons">
                             <div className="popup">
                                 <p>Message send!</p>
-                                <button className="close" onClick={this.closeBtn}>Close</button>
+                                <button onClick={this.closeBtn}>Close</button>
                             </div>
-                            <button className="clear" onClick={this.clearBtn}>Wyczyść</button>
-                            <button className="send" onClick={this.sendBtn}>Wyślij</button>
+                            <div className="buttons">
+                                <button  onClick={this.clearBtn}>Reset</button>
+                                <button  onClick={this.sendBtn}>Send</button>
+                            </div>
                         </div>
-
-
                     </form>
-
-
-
-
-
-
                 </div>
                 <div className="contact-icons">
-                    
-                
-                
                     <h5>Find me on:</h5>
                     <div className="icons">
                         {links}
                     </div>
-
-                
-
-
                 </div>
             </div>
+            <footer>© 2021 Przemek Rura</footer>
         </div>
-        
     )
 }
 }
