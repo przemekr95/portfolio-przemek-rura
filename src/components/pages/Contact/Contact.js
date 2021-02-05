@@ -35,16 +35,17 @@ class Contact extends React.Component {
         })
     }
 
-    showError = (input) => {
-        const formBox = input.parentElement;
-        formBox.classList.add('error')
+    sendBtn = (e) => {
+        e.preventDefault()
+        const username = document.querySelector('#username');
+        const email = document.querySelector('#email');
+        const subject = document.querySelector('#subject');
+        const message = document.querySelector('#message');
+        this.checkForm([username, email, subject, message])
+        this.checkMail(email)
+        this.checkErrors()
     }
-
-    clearError = (input) => {
-        const formBox = input.parentElement;
-        formBox.classList.remove('error')
-    }
-
+    
     checkForm = (input) =>{
         input.forEach(el => {
             if(el.value===''){
@@ -53,6 +54,16 @@ class Contact extends React.Component {
                 this.clearError(el);
             }
         });
+    }
+
+    showError = (input) => {
+        const formBox = input.parentElement;
+        formBox.classList.add('error')
+    }
+
+    clearError = (input) => {
+        const formBox = input.parentElement;
+        formBox.classList.remove('error')
     }
 
     checkMail = email => {
@@ -65,29 +76,20 @@ class Contact extends React.Component {
         }
     }
 
-    sendBtn = (e) => {
-        e.preventDefault()
-        const username = document.querySelector('#username');
-        const email = document.querySelector('#email');
-        const subject = document.querySelector('#subject');
-        const message = document.querySelector('#message');
-        this.checkForm([username, email, subject, message])
-        this.checkMail(email)
-        this.checkErrors()
-    }
-
     checkErrors = () => {
         const allInputs = document.querySelectorAll('.form-box');
         let errorCount = 0;
+        
         allInputs.forEach(el => {
             if(el.classList.contains('error')){
                 errorCount++;
             }
+        })
             if(errorCount === 0) {
                 const popup = document.querySelector('.popup')
                 popup.classList.add('show-popup')
             } 
-        })
+        
     }
 
     closeBtn = (e) => {
@@ -139,12 +141,13 @@ class Contact extends React.Component {
                             <p className="error-text">Fill in correctly</p>
                         </div>
     
+
+
+                        <div className="control-buttons">
                         <div className="popup">
                             <p>Message send!</p>
                             <button className="close" onClick={this.closeBtn}>Close</button>
                         </div>
-
-                        <div className="control-buttons">
                             <button className="clear" onClick={this.clearBtn}>Wyczyść</button>
                             <button className="send" onClick={this.sendBtn}>Wyślij</button>
                         </div>
