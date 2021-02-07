@@ -13,8 +13,6 @@ class Contact extends React.Component {
         message: ''
     }
 
-
-
     handleChange = (e) => {
         this.setState({
             [e.target.id]: e.target.value
@@ -111,25 +109,32 @@ class Contact extends React.Component {
     render(){
         
         const link = [
-            {name: "LinkedIn", img: linkedin, link: "https://www.linkedin.com/in/przemekrura/" ,alt: "LinkedIn's logo"},
-            {name: "GitHub", img: github, link: "https://github.com/przemekr95" ,alt: "GitHub's logo"},
-            {name: "CodeWars", img: codewars, link: "https://www.codewars.com/users/przemekr95" ,alt: "CodeWars's logo"}
+            {name: "LinkedIn", img: linkedin, link: "https://www.linkedin.com/in/przemekrura/", alt: "LinkedIn's logo", deley:"2000"},
+            {name: "GitHub", img: github, link: "https://github.com/przemekr95", alt: "GitHub's logo", deley:"2500"},
+            {name: "CodeWars", img: codewars, link: "https://www.codewars.com/users/przemekr95", alt: "CodeWars's logo", deley:"3000"}
         ]
 
         const links =link.map(item => (
-            <a href={item.link} target="_blank" rel='noreferrer' key={item.name}>
+            <a 
+                href={item.link} target="_blank" rel='noreferrer' key={item.name}
+                data-aos="zoom-in-left" 
+                data-aos-delay={item.delay}
+                data-aos-duration="1200">
                 <img src={item.img} alt={item.alt}/>
                 <span>{item.name}</span>
             </a>
         ))
 
-
     return(
         
         <div className="contact-wrapper" id="contact">
-            <h2>Contact</h2>
+            <h2 data-aos="fade-down" 
+                data-aos-delay="100"
+                data-aos-duration="1000">Contact</h2>
             <div className="contact">
-                <div className="contact-form-box">
+                <div className="contact-form-box" data-aos="zoom-in" 
+                data-aos-delay="1000"
+                data-aos-duration="1000">
                     <h5>Have a question or want to work together?</h5>
                     <form className="contact-form">
                         <div className="form-box">
@@ -165,7 +170,8 @@ class Contact extends React.Component {
                     </form>
                 </div>
                 <div className="contact-icons">
-                    <h5>Find me on:</h5>
+                    <h5 data-aos="zoom-in-left" 
+                        data-aos-duration="1200">Find me on:</h5>
                     <div className="icons">
                         {links}
                     </div>
