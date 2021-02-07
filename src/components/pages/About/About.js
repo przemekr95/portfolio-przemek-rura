@@ -14,7 +14,7 @@ render(){
 
 
     return(
-        <>
+        
         <div className="about-wrapper" id="about">
             <h2 className="animate__animated animate__backInLeft">{this.state.title}</h2>
             <div className="about">
@@ -44,8 +44,12 @@ render(){
                     </li>
                 </div>
             </div>
+            <div className="triangle-box-about">
+                <div className="triangle-left"></div>
+                <div className="triangle-right"></div>
+            </div>
         </div>
-        </>
+        
     )
 }}
 

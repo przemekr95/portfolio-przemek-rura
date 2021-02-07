@@ -38,6 +38,10 @@ const list = projects.map(item => (
             <div className="portfolio">
                 {list}
             </div>
+            <div className="triangle-box-portfolio">
+                <div className="triangle-left"></div>
+                <div className="triangle-right"></div>
+            </div>
         </div>
         
     )

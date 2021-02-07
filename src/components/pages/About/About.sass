@@ -3,7 +3,6 @@
     flex-direction: column
     align-items: center
     background-color: #f1f2f6
-    padding-bottom: 60px
 
 .about-wrapper > h2
     font-size: 60px
@@ -59,8 +58,29 @@
     color: #f1f2f6
     text-shadow: 0 0 5px black
     transition: transform .3s
-i:hover
+.row > li> i:hover
     transform: scale(1.1)
+
+.triangle-box-about
+    display: flex
+    margin-top: 80px
+
+.triangle-box-about .triangle-left
+    display: flex
+    flex-direction: row
+    width: 0
+    height: 0
+    border-bottom: 100px solid #0c2461
+    border-right: 50vw solid transparent
+    border-size: 0px
+
+.triangle-box-about .triangle-right
+    display: flex
+    flex-direction: row
+    width: 0
+    height: 0
+    border-bottom: 100px solid #0c2461
+    border-left: 50vw solid transparent
 
 @media (max-width: 1100px)
     .about-text >p

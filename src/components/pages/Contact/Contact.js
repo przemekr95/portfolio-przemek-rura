@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-scroll';
 import '../../../css/Contact.css';
 import codewars from './../../../images/codewars.png'
 import linkedin from './../../../images/linkedin.png'
@@ -170,7 +171,18 @@ class Contact extends React.Component {
                     </div>
                 </div>
             </div>
-            <footer>© 2021 Przemek Rura</footer>
+            <footer>
+                <Link className="backArrow animate__animated animate__headShake animate__infinite"
+                    activeClass="active"
+                    to="home"
+                    spy={true}
+                    smooth={true}
+                    duration={1000}
+                    >
+                        <i className="arrow fas fa-chevron-up"></i>
+                </Link>
+                <h6>© 2021 Przemek Rura</h6>
+            </footer>
         </div>
     )
 }

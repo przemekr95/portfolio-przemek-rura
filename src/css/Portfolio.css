@@ -10,7 +10,6 @@
       -ms-flex-align: center;
           align-items: center;
   background-color: #0c2461;
-  padding-bottom: 60px;
 }
 
 .portfolio-wrapper > h2 {
@@ -118,5 +117,40 @@
 .portfolio-btns > a:focus {
   -webkit-box-shadow: 0 0 5px #0c2461;
           box-shadow: 0 0 5px #0c2461;
+}
+
+.triangle-box-portfolio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 80px;
+}
+
+.triangle-box-portfolio .triangle-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 0;
+  height: 0;
+  border-bottom: 100px solid #f1f2f6;
+  border-right: 50vw solid transparent;
+}
+
+.triangle-box-portfolio .triangle-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 0;
+  height: 0;
+  border-bottom: 100px solid #f1f2f6;
+  border-left: 50vw solid transparent;
 }
 /*# sourceMappingURL=Portfolio.css.map */
