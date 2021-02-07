@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/portfolio-przemek-rura/static/css/main.4fbcf0c2.chunk.css",
-    "main.js": "/portfolio-przemek-rura/static/js/main.be8a6b76.chunk.js",
-    "main.js.map": "/portfolio-przemek-rura/static/js/main.be8a6b76.chunk.js.map",
-    "runtime-main.js": "/portfolio-przemek-rura/static/js/runtime-main.54b1fec2.js",
-    "runtime-main.js.map": "/portfolio-przemek-rura/static/js/runtime-main.54b1fec2.js.map",
-    "static/js/2.01b6d148.chunk.js": "/portfolio-przemek-rura/static/js/2.01b6d148.chunk.js",
-    "static/js/2.01b6d148.chunk.js.map": "/portfolio-przemek-rura/static/js/2.01b6d148.chunk.js.map",
+    "main.css": "/portfolio-przemek-rura/static/css/main.f3c08e26.chunk.css",
+    "main.js": "/portfolio-przemek-rura/static/js/main.065b99ef.chunk.js",
+    "main.js.map": "/portfolio-przemek-rura/static/js/main.065b99ef.chunk.js.map",
+    "runtime-main.js": "/portfolio-przemek-rura/static/js/runtime-main.6dbdb6d9.js",
+    "runtime-main.js.map": "/portfolio-przemek-rura/static/js/runtime-main.6dbdb6d9.js.map",
+    "static/js/2.99ca01ab.chunk.js": "/portfolio-przemek-rura/static/js/2.99ca01ab.chunk.js",
+    "static/js/2.99ca01ab.chunk.js.map": "/portfolio-przemek-rura/static/js/2.99ca01ab.chunk.js.map",
     "index.html": "/portfolio-przemek-rura/index.html",
-    "static/css/main.4fbcf0c2.chunk.css.map": "/portfolio-przemek-rura/static/css/main.4fbcf0c2.chunk.css.map",
-    "static/js/2.01b6d148.chunk.js.LICENSE.txt": "/portfolio-przemek-rura/static/js/2.01b6d148.chunk.js.LICENSE.txt",
+    "static/css/main.f3c08e26.chunk.css.map": "/portfolio-przemek-rura/static/css/main.f3c08e26.chunk.css.map",
+    "static/js/2.99ca01ab.chunk.js.LICENSE.txt": "/portfolio-przemek-rura/static/js/2.99ca01ab.chunk.js.LICENSE.txt",
     "static/media/About.css": "/portfolio-przemek-rura/static/media/about-photo.5590a05c.jpg",
     "static/media/billSplitter.57d36e6d.jpg": "/portfolio-przemek-rura/static/media/billSplitter.57d36e6d.jpg",
     "static/media/codewars.a4c91536.png": "/portfolio-przemek-rura/static/media/codewars.a4c91536.png",
@@ -22,9 +22,9 @@
     "static/media/wallet.420c7f70.jpg": "/portfolio-przemek-rura/static/media/wallet.420c7f70.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.54b1fec2.js",
-    "static/js/2.01b6d148.chunk.js",
-    "static/css/main.4fbcf0c2.chunk.css",
-    "static/js/main.be8a6b76.chunk.js"
+    "static/js/runtime-main.6dbdb6d9.js",
+    "static/js/2.99ca01ab.chunk.js",
+    "static/css/main.f3c08e26.chunk.css",
+    "static/js/main.065b99ef.chunk.js"
   ]
 }
