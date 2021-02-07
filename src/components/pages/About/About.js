@@ -15,7 +15,7 @@ render(){
 
     return(
         <>
-        <div className="about-wrapper">
+        <div className="about-wrapper" id="about">
             <h2 className="animate__animated animate__backInLeft">{this.state.title}</h2>
             <div className="about">
                 <div className="photo"></div>

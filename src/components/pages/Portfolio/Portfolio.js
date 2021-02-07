@@ -31,15 +31,15 @@ const list = projects.map(item => (
 
 
     return(
-        <h4>
+        
          
-        <div className="portfolio-wrapper">
+        <div className="portfolio-wrapper" id="portfolio">
             <h2>Portfolio</h2>
             <div className="portfolio">
                 {list}
             </div>
         </div>
-        </h4>
+        
     )
 }
 

@@ -2,25 +2,20 @@ import React from 'react';
 import '../../../css/Home.css'
 
 
-class Home extends React.Component {
-    state ={
-        name: 'Przemek Rura',
-        text: 'Frontend Developer'
-    }
 
+const Home = ()=>{
 
-
-    render(){
+    
         return(
             <>
-            <div className="home-wrapper">
+            <div className="home-wrapper" id="home">
                 <div className="shadow"></div>
-                <h1 className='animate__animated animate__backInDown'>{this.state.name}</h1>
-                <p className='animate__animated animate__backInDown animate__delay-2s'>{this.state.text}</p>
+                <h1 className='animate__animated animate__backInDown'>Przemek Rura</h1>
+                <p className='animate__animated animate__backInDown animate__delay-2s'>Frontend Developer</p>
             </div>
             </>
         )
-    }
+    
 }
 
 export default Home;

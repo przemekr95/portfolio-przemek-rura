@@ -1,6 +1,7 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+// import { NavLink } from 'react-router-dom';
 import '../../css/HamburgerMenu.css';
+import { Link } from 'react-scroll';
 
 class HamburgerMenu extends React.Component{
     constructor(props){
@@ -19,6 +20,28 @@ toggleMenu (){
 }
 
 render(){
+    const navItems = [
+        {name: "Home", link: "home"},
+        {name: "About", link: "about"},
+        {name: "Portfolio", link: "portfolio"},
+        {name: "Contact", link: "contact"}
+    ]
+    
+    const nav = navItems.map(item => (
+        <li key={item.name}>
+        <Link className="nav-item" onClick={()=>this.toggleMenu()}
+            activeClass="active"
+            to={item.link}
+            spy={true}
+            smooth={true}
+            duration={500}
+            >{item.name}
+        </Link>
+    </li>    
+    ))
+
+
+    
 
     return (
         <>
@@ -29,18 +52,7 @@ render(){
                     <div onClick={()=>this.toggleMenu()}>
                         <div>
                             <ul>
-                                <li>
-                                    <NavLink className="nav-item" to='/'>Home</NavLink> 
-                                </li>
-                                <li>
-                                    <NavLink className="nav-item" to='/about'>About</NavLink>
-                                </li>
-                                <li>
-                                    <NavLink className="nav-item" to='/portfolio'>Portfolio</NavLink>
-                                </li>
-                                <li>
-                                    <NavLink className="nav-item" to='/contact'>Contact</NavLink>
-                                </li>
+                                {nav}           
                             </ul>
                         </div>
                     </div>
