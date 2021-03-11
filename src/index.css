@@ -5,3 +5,7 @@
   color: #ffffff;
   font-family: 'Ubuntu', sans-serif;
 }
+
+body::-webkit-scrollbar {
+  display: none;
+}

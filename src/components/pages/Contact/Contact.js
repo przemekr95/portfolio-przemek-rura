@@ -133,7 +133,7 @@ class Contact extends React.Component {
                 data-aos-duration="1000">Contact</h2>
             <div className="contact">
                 <div className="contact-form-box" data-aos="zoom-in" 
-                data-aos-delay="1000"
+                data-aos-delay="500"
                 data-aos-duration="1000">
                     <h5>Have a question or want to work together?</h5>
                     <form className="contact-form">
@@ -159,7 +159,7 @@ class Contact extends React.Component {
                         </div>
                         <div className="control-buttons">
                             <div className="popup">
-                                <p>Message send!</p>
+                                <p>Learning in progress!</p>
                                 <button onClick={this.closeBtn}>Close</button>
                             </div>
                             <div className="buttons">
