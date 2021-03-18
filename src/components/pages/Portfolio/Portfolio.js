@@ -4,14 +4,14 @@ import iskierka from './../../../images/portfolio/iskierka.jpg'
 import wallet from './../../../images/portfolio/wallet.jpg'
 import exchangeRateApp from './../../../images/portfolio/exchangeRateApp.jpg'
 import billSplitter from './../../../images/portfolio/billSplitter.jpg'
-import magic8Ball from './../../../images/portfolio/magic8Ball.jpg'
+import volleystat from './../../../images/portfolio/volleystat.jpg'
 import stopwatch from './../../../images/portfolio/stopwatch.jpg'
 
 const projects = [
     {name: "Iskierka Tarnów", img: iskierka, live: "http://iskierka.tarnow.pl/" ,code: "https://github.com/przemekr95/iskierka-tarnow", delay:"700"},
+    {name: "Volleystat", img: volleystat, live: "https://przemekr95.github.io/volleystat/" ,code: "https://github.com/przemekr95/volleystat", delay:"100"},
     {name: "Stopwatch", img: stopwatch, live: "https://przemekr95.github.io/stopwatch/" ,code: "https://github.com/przemekr95/stopwatch/", delay:"200"},
     {name: "Exchange Rate App", img: exchangeRateApp, live: "https://przemekr95.github.io/exchangeRateApp/" ,code: "https://github.com/przemekr95/exchangeRateApp", delay:"550"},
-    {name: "Magic 8ball", img: magic8Ball, live: "https://przemekr95.github.io/magic8Ball/" ,code: "https://github.com/przemekr95/magic8Ball", delay:"100"},
     {name: "Bill Splitter", img: billSplitter, live: "https://przemekr95.github.io/billSplitter/" ,code: "https://github.com/przemekr95/billSplitter", delay:"500"},
     {name: "Wallet", img: wallet, live: "https://przemekr95.github.io/wallet/" ,code: "https://github.com/przemekr95/wallet", delay:"400"}
 ]
